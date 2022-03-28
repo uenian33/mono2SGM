@@ -6,7 +6,7 @@ This project is highly based on "Watson, Jamie, et al. "Learning stereo from sin
 
 
 # Pipeline
-![The synthetic stereo disparity generation pipeline](relative/path/to/img.jpg?raw=true "Title")
+![The synthetic stereo disparity generation pipeline](figs/pipeline.jpg?raw=true "Title")
 
 ## Inputs
 The stereo generator assumes the following data are given:
@@ -20,14 +20,14 @@ The stereo generator assumes the following data are given:
 python example.py
 ```
 - Feel free to change the image path using the images in folder "testsets"
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+[a link](https://github.com/uenian33/mono2SGM/tree/main/testsets)
 
 ## Results
 Using OpenCV provided SGBM (no post-processing), we can synthesize a rough disparity:
-![The simple OpenCV syntheziation](relative/path/to/img.jpg?raw=true "Title")
+![The simple OpenCV syntheziation](figs/results.jpg?raw=true "Title")
 
 Using a 3rd party  SGM (with post-processing), we can synthesize  relatively well disparity maps, but very time-consuming:
-![The simple OpenCV syntheziation](relative/path/to/img.jpg?raw=true "Title")
+![The 3rd party SGM disparity calculation results](figs/3rd_reults.jpg?raw=true "Title")
 ## Parameters
 
 If bad quality disparity map generation map is required, test these parameters:
