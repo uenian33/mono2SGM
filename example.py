@@ -6,8 +6,8 @@ bg_pth = 'testsets/randoms/000002.jpg'
 disp_pth = 'testsets/diode/00019_00183_indoors_000_010.npy'
 
 
-#left_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085.png'
-#disp_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085_depth.png'
+left_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085.png'
+disp_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085_depth.png'
 
 
 # define a pre-processing pipeline, to denoise and white-balance and other filter
@@ -27,11 +27,11 @@ preprocessor = PreProcessor(denoise=False,
  '''
 st_converter = StereoConverter(feed_height=480,
                              feed_width=640,
-                             max_disparity=192,
+                             max_disparity=100,
                              fix_disparity_scale=True,
-                             max_disparity_range=(85, 100),
+                             max_disparity_range=(50, 100),
                              disable_synthetic_augmentation=True,
-                             crop_images=True,
+                             crop_images=False,
                              )
 
 # returns a set of images, the code and algorithm are inspired by 
@@ -62,11 +62,11 @@ R = cv2.cvtColor(right_image, cv2.COLOR_BGR2GRAY)
 
 # playing the paramters of SGM to check results
 synthesized_disp = st_converter.simple_SGM_disparity(left_image, right_image,  
-                                                    window_size=3, 
-                                                    min_disp=10, 
-                                                    new_max_disparity=120,
-                                                    blockSize=17,
-                                                    speckleWindowSize=100,
+                                                    window_size=1, 
+                                                    min_disp=0, 
+                                                    new_max_disparity=40,
+                                                    blockSize=3,
+                                                    speckleWindowSize=50,
                                                     speckleRange=2)
 
 
