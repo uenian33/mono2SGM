@@ -49,3 +49,12 @@ If bad quality disparity map generation map is required, test these parameters:
 
 
 # Citatons
+If you use this projection, please cite the references mentioned above, and this repository:
+```
+@misc{github,
+  author={github},
+  title={mono2SGM},
+  year={2022},
+  url={https://github.com/uenian33/mono2SGM},
+}
+```
