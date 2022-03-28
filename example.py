@@ -6,8 +6,6 @@ bg_pth = 'testsets/randoms/000002.jpg'
 disp_pth = 'testsets/diode/00019_00183_indoors_000_010.npy'
 
 
-left_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085.png'
-disp_pth = '/home/uenian/00-AI/mon2stereo/testsets/nyu/0085_depth.png'
 
 
 # define a pre-processing pipeline, to denoise and white-balance and other filter
