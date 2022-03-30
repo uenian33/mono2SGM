@@ -26,7 +26,7 @@ python example.py
 Using OpenCV provided SGBM (no post-processing), we can synthesize a rough disparity:
 ![The simple OpenCV syntheziation](figs/results.jpg?raw=true "Title")
 
-Using a 3rd party  SGM (with post-processing), we can synthesize  relatively well disparity maps, but very time-consuming:
+Using a 3rd party  SGM (with post-processing) and well finetuned post-processing filtering (e.g.MSE), we can synthesize  relatively well disparity maps, but very time-consuming:
 ![The 3rd party SGM disparity calculation results](figs/3rd_reults.jpg?raw=true "Title")
 ## Parameters
 
