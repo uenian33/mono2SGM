@@ -4,8 +4,10 @@
 
 This project is highly based on "Watson, Jamie, et al. "Learning stereo from single images." _European Conference on Computer Vision_. Springer, Cham, 2020". Refer to it for more mathmatical details. 
 
+## Purpose
+This project is created as a data augmentation for depth-related image observations. To simulate a real traditional stereo-camera based depth estimation result from the estimated dense depth map.
 
-# Pipeline
+## Pipeline
 ![The synthetic stereo disparity generation pipeline](figs/pipeline.jpg?raw=true "Title")
 
 ## Inputs
