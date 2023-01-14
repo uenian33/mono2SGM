@@ -1,6 +1,8 @@
 
-# mono2SGM
+# RGB to depth generation
  Generating SGM calculated disparity estimation from monocular RGB image.  This project provides a python based library which generates stereo disparity map from a single image input. 
+ 
+ !!! This project can be used as data augmentation for generating real depth camera like depth images
 
 This project is highly based on "Watson, Jamie, et al. "Learning stereo from single images." _European Conference on Computer Vision_. Springer, Cham, 2020". Refer to it for more mathmatical details. 
 
